@@ -38,7 +38,16 @@
 
     Preferred OS <form:radiobuttons path="preferredOS" items="${employee.aviableOS}"/>
     <br><br>
+
+    Foreign languages:
+    EN <form:checkbox path="languages" value="English"/>
+    DE <form:checkbox path="languages" value="Deutch"/>
+    FR <form:checkbox path="languages" value="Franch"/>
+    <br><br>
+
     <input type="submit" value="OK">
-</form:form>
+    </form:form>
+
+
 </body>
 </html>

@@ -11,6 +11,7 @@ public class Employee {
     private Map<String, String> aviableDepartments;
     private String preferredOS;
     private Map<String, String> aviableOS;
+    private String[] languages;
 
     public Employee() {
         aviableDepartments = new HashMap<>();
@@ -87,6 +88,14 @@ public class Employee {
 
     public void setAviableOS(Map<String, String> aviableOS) {
         this.aviableOS = aviableOS;
+    }
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
     }
 
     @Override
