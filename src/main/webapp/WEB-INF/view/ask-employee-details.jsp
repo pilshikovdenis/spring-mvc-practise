@@ -22,19 +22,25 @@
 
 <%--spring forms(use spring mvc tags)--%>
 <form:form action="showDetails" modelAttribute="employee">
-    Name <form:input path="name"/><br><br>
-    Surname <form:input path="surname"/><br><br>
+    <%--    name    --%>
+    Name <form:input path="name"/>
+    <form:errors path="name"/>
+    <br><br>
+    <%--    surname --%>
+    Surname <form:input path="surname"/>
+    <form:errors path="surname"/>
+    <br><br>
     Salary <form:input path="salary"/><br><br>
 
     Department <form:select path="department">
-        <form:options items = "${employee.aviableDepartments}"/>
-    </form:select><br><br>
+    <form:options items="${employee.aviableDepartments}"/>
+</form:select><br><br>
 
-<%--    hardcoded --%>
-<%--    Preferred OS <br>--%>
-<%--    Linux <form:radiobutton path="preferredOS" value="Linux"/>--%>
-<%--    Windows <form:radiobutton path="preferredOS" value="Windows"/>--%>
-<%--    Mac OS <form:radiobutton path="preferredOS" value="Mac OS"/>--%>
+    <%--    hardcoded --%>
+    <%--    Preferred OS <br>--%>
+    <%--    Linux <form:radiobutton path="preferredOS" value="Linux"/>--%>
+    <%--    Windows <form:radiobutton path="preferredOS" value="Windows"/>--%>
+    <%--    Mac OS <form:radiobutton path="preferredOS" value="Mac OS"/>--%>
 
     Preferred OS <form:radiobuttons path="preferredOS" items="${employee.aviableOS}"/>
     <br><br>
@@ -44,7 +50,7 @@
     <br><br>
 
     <input type="submit" value="OK">
-    </form:form>
+</form:form>
 
 
 </body>
