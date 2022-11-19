@@ -12,6 +12,7 @@ public class Employee {
     private String preferredOS;
     private Map<String, String> aviableOS;
     private String[] languages;
+    private Map<String,String> languageList;
 
     public Employee() {
         aviableDepartments = new HashMap<>();
@@ -24,6 +25,11 @@ public class Employee {
         aviableOS.put("Mac OS", "Mac OS");
         aviableOS.put("Windows 7","Windows 7");
         aviableOS.put("Windows 11","Windows 11");
+
+        languageList = new HashMap<>();
+        languageList.put("English", "EN");
+        languageList.put("Deutch", "DE");
+        languageList.put("Franch", "FR");
 
     }
 
@@ -96,6 +102,14 @@ public class Employee {
 
     public void setLanguages(String[] languages) {
         this.languages = languages;
+    }
+
+    public Map<String, String> getLanguageList() {
+        return languageList;
+    }
+
+    public void setLanguageList(Map<String, String> languageList) {
+        this.languageList = languageList;
     }
 
     @Override

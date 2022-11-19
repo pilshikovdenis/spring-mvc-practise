@@ -19,12 +19,12 @@
 <h3>Salary: ${employee.salary}</h3>
 <h3>Department: ${employee.department}</h3>
 <h3>Preferred OS: ${employee.preferredOS}</h3>
-<h4>Foreign languages:
+<h3>Foreign languages:
     <ul>
         <c:forEach var="lang" items="${employee.languages}">
             <li>${lang}</li>
         </c:forEach>
     </ul>
-</h4>
+</h3>
 </body>
 </html>

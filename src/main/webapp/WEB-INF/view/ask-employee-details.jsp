@@ -40,9 +40,7 @@
     <br><br>
 
     Foreign languages:
-    EN <form:checkbox path="languages" value="English"/>
-    DE <form:checkbox path="languages" value="Deutch"/>
-    FR <form:checkbox path="languages" value="Franch"/>
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
     <br><br>
 
     <input type="submit" value="OK">
