@@ -1,12 +1,21 @@
 package com.pilshikov.spring_mvc;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Employee {
     private String name;
     private String surname;
     private int salary;
     private String department;
 
+    private Map<String, String> aviableDepartments;
+
     public Employee() {
+        aviableDepartments = new HashMap<>();
+        aviableDepartments.put("IT", "Information Technology");
+        aviableDepartments.put("HR", "Human Resources");
+        aviableDepartments.put("Sales", "Sales");
     }
 
     public Employee(String name, String surname, int salary, String department) {
@@ -46,6 +55,14 @@ public class Employee {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public Map<String, String> getAviableDepartments() {
+        return aviableDepartments;
+    }
+
+    public void setAviableDepartments(Map<String, String> aviableDepartments) {
+        this.aviableDepartments = aviableDepartments;
     }
 
     @Override
