@@ -2,19 +2,21 @@ package com.pilshikov.spring_mvc;
 
 
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
     @Size(min = 2, max = 30, message = "this field must have between 2 and 30 characters")
     private String name;
+
     @NotBlank(message = "surname is requred field")
     private String surname;
+
+    @Min(value = 200, message = "salary can not be less than 200")
+    @Max(value = 10000, message = "salary can not be more than 10000")
     private int salary;
+
     private String department;
     private Map<String, String> aviableDepartments;
     private String preferredOS;
