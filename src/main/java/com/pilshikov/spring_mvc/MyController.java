@@ -19,6 +19,7 @@ public class MyController {
 
     @RequestMapping("/askDetails")
     public String askEmployeeDetails(Model model) {
+//        Employee employee = new Employee("Viktor","Petrov",5000, "IT" );
         model.addAttribute("employee", new Employee());
         return "ask-employee-details";
     }
@@ -40,7 +41,8 @@ public class MyController {
 
     @RequestMapping("/showDetails")
     public String showEmployeeDetails(@ModelAttribute("employee") Employee employee) {
-        
+//        int salary = employee.getSalary();
+//        employee.setSalary(salary + 500);
         return "show-employee-details";
     }
 }

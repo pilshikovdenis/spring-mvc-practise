@@ -16,6 +16,7 @@
 <h3>Name: ${employee.name}</h3>
 <h3>Surname: ${employee.surname}</h3>
 <h3>Salary: ${employee.salary}</h3>
+<h3>Department: ${employee.department}</h3>
 
 </body>
 </html>
