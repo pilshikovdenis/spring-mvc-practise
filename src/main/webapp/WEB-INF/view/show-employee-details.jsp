@@ -27,5 +27,6 @@
     </ul>
 </h3>
 <h3>Phone number: ${employee.phoneNumber}</h3>
+<h3>Email: ${employee.email}</h3>
 </body>
 </html>
