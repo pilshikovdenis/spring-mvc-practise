@@ -29,6 +29,15 @@
     Department <form:select path="department">
         <form:options items = "${employee.aviableDepartments}"/>
     </form:select><br><br>
+
+<%--    hardcoded --%>
+<%--    Preferred OS <br>--%>
+<%--    Linux <form:radiobutton path="preferredOS" value="Linux"/>--%>
+<%--    Windows <form:radiobutton path="preferredOS" value="Windows"/>--%>
+<%--    Mac OS <form:radiobutton path="preferredOS" value="Mac OS"/>--%>
+
+    Preferred OS <form:radiobuttons path="preferredOS" items="${employee.aviableOS}"/>
+    <br><br>
     <input type="submit" value="OK">
 </form:form>
 </body>

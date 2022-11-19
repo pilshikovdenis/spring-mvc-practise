@@ -17,6 +17,7 @@
 <h3>Surname: ${employee.surname}</h3>
 <h3>Salary: ${employee.salary}</h3>
 <h3>Department: ${employee.department}</h3>
+<h3>Preferred OS: ${employee.preferredOS}</h3>
 
 </body>
 </html>

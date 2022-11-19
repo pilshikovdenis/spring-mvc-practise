@@ -8,14 +8,22 @@ public class Employee {
     private String surname;
     private int salary;
     private String department;
-
     private Map<String, String> aviableDepartments;
+    private String preferredOS;
+    private Map<String, String> aviableOS;
 
     public Employee() {
         aviableDepartments = new HashMap<>();
         aviableDepartments.put("IT", "Information Technology");
         aviableDepartments.put("HR", "Human Resources");
         aviableDepartments.put("Sales", "Sales");
+
+        aviableOS = new HashMap<>();
+        aviableOS.put("Linux", "Linux");
+        aviableOS.put("Mac OS", "Mac OS");
+        aviableOS.put("Windows 7","Windows 7");
+        aviableOS.put("Windows 11","Windows 11");
+
     }
 
     public Employee(String name, String surname, int salary, String department) {
@@ -63,6 +71,22 @@ public class Employee {
 
     public void setAviableDepartments(Map<String, String> aviableDepartments) {
         this.aviableDepartments = aviableDepartments;
+    }
+
+    public String getPreferredOS() {
+        return preferredOS;
+    }
+
+    public void setPreferredOS(String preferredOS) {
+        this.preferredOS = preferredOS;
+    }
+
+    public Map<String, String> getAviableOS() {
+        return aviableOS;
+    }
+
+    public void setAviableOS(Map<String, String> aviableOS) {
+        this.aviableOS = aviableOS;
     }
 
     @Override
